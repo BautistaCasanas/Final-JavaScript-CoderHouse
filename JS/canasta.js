@@ -38,8 +38,6 @@ const insertarProductosACanasta =(producto)=>{
     $.get(urlProductos, (respuesta, estado)=>{
         if(estado === "success"){
     let productoEnCanasta = respuesta.filter(e => e.id == producto);
-
-    if (productoEnCanasta[0] !== undefined){
     console.log(productoEnCanasta[0]);
     let contenedor = document.createElement("div");
     contenedor.className= "productos_Canasta";
@@ -72,12 +70,10 @@ const insertarProductosACanasta =(producto)=>{
     });
 
     canastaLocalStorage.push(productoEnCanasta[0]);
-    localStorage.setItem("canastas", JSON.stringify(canastaLocalStorage));
     
+    localStorage.setItem("canastas", JSON.stringify(canastaLocalStorage));
+
     sumarProductos();
-    }else{
-        console.log("No hay productos en el carrito!");
-    } 
 }
 });
 }
