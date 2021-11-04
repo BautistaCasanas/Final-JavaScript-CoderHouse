@@ -1,0 +1,416 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*HEADER*/
+.page-nav{
+    margin: 0px;
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+.buscador {
+    text-align: center;
+    position: relative;
+}
+
+#sugeridos {
+    position: absolute;
+    padding: 0; 
+    list-style: none;
+    background-color:lavender;
+    width: 300px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display:none;
+}
+
+#sugeridos.activo {
+    display: block;
+}
+
+#buscador-producto {
+    width: 300px;
+    height: 35px;
+    margin: 0px;
+
+}
+
+.logo-contacto{
+    margin: 25px;
+}
+
+/*INDEX MAIN*/
+
+.h1{
+    background-color: wheat;
+    margin: 0px;
+    padding: 20px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+#saludo{
+    font-size: 20px;
+    font-weight:600;
+}
+.saludar{
+    background-color: rgb(214, 243, 253);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 36%;
+    border: 2px solid black;
+}
+
+#listado {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+/*PRODUCTOS*/
+.productos{
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.productos:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.productos img{
+    width: 200px;
+    height: 150px;   
+}
+
+
+.descripcion-producto{
+    margin: 15px;
+}
+
+.botonAgregar{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(139, 253, 139);
+    cursor: pointer;
+}
+
+
+/*CANASTA*/
+
+.canasta{
+    margin: 0%;
+    padding: 0%;
+    min-width: 450px;
+    max-width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #efefef;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.carrito_title{
+    background-color: black;
+    height: 40px;
+    width: 450px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.productos_Canasta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.productos_Canasta img {
+    width: 140px;
+}
+
+.descripcion-producto {
+    text-align: left;
+    padding: 20px;
+}
+
+.descripcion-producto b{
+    font-size: 20px;
+}
+
+.total_Canasta{
+    margin-top: 20px;
+    width: 350px;
+    height: 170px;
+    background-color:#efefef;
+    border: 1px solid black;
+}
+.pago_Title{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.total_Pagar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.p_pagar{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#total-pagar {
+    font-size: 22px;
+    color: darkgreen;
+    font-weight: 600;
+}
+
+
+.boton-eliminar {
+    cursor: pointer;
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+/* REGISTRO MAIN*/
+
+.body-contacto{
+    background-color: cadetblue;
+}
+
+.main-Contacto{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton_RegistroAnimado{
+    position: absolute;
+    top: 200px;
+    left:20px;
+    cursor: pointer;
+}
+#caja1{
+    position: absolute;
+    top: 225px;
+    left:100px ;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    display: none;
+}
+#form{
+    width: 350px;
+    height: 420px;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.contactanosTitulo{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+
+#warnings{
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: black;
+    padding-top: 20px;
+}
+
+#boton{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    background:grey;
+    color:black;   
+    margin-top: 100px;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color:black;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row1{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row1 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row1 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
