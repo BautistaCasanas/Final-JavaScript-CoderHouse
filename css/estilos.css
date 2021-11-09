@@ -82,6 +82,32 @@
     padding-top: 40px;
 }
 
+#productosBuscados{
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+#productosBuscados:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+#imgBuscado{
+    width: 200px;
+    height: 180px;
+    margin: 10px;
+}
+
+#notFound{
+    border: 2px solid black;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
 /*PRODUCTOS*/
 .productos{
     width: 300px;

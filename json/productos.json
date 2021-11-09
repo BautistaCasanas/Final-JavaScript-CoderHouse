@@ -4,29 +4,57 @@
     {
         "id": 1,
         "nombre": "Dell G5 G5587 15,6 I7-8750h 8gb 1tb+128gb Ssd Gtx 1050ti",
+        "title": "computadora",
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_606427-MLA32238592138_092019-O.webp",
-        "precio": "255195",
-        "cantidad":1
+        "precio": "255195"
     },
     {
         "id": 2,
         "nombre": "Apple Macbook Air (13 pulgadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM) - Gris espacial",
+        "title": "computadora",
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_801112-MLA46516512347_062021-O.webp",
-        "precio": "182969",
-        "cantidad":1
+        "precio": "182969"
     },
     {
         "id": 3,
         "nombre": "Smart TV Samsung Series 7 UN50TU7000GCZB LED 4K 50 220V - 240V",
+        "title": "televisor",
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_878604-MLA44160072739_112020-O.webp",
-        "precio": "78999",
-        "cantidad":1
+        "precio": "78999"
     },
     {
         "id": 4,
         "nombre": "Computadoras Gamer Amd Ryzen 5 3600 Ddr4 8gb Rx570 8gb Gddr5",
+        "title": "computadora",
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_842275-MLA31068196762_062019-O.webp",
-        "precio": "152999",
-        "cantidad":1
+        "precio": "152999"
+    },
+    {
+        "id": 5,
+        "nombre": "Telefono Celular Samsung Galaxy A12 64gb 4gb S/s Azul",
+        "title": "celular",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_822259-MLA45385147184_032021-V.webp",
+        "precio": "40220"
+    },
+    {
+        "id": 6,
+        "nombre": "Smart TV Samsung Series 5 UN43T5300AGCZB LED Full HD 43",
+        "title": "Televisor",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_886670-MLA44628265236_012021-V.webp",
+        "precio": "176000"
+    },
+    {
+        "id": 7,
+        "nombre": "Telefono Samsung A12 64gb Negro - Nuevo",
+        "title": "celular",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_946470-MLA47017334346_082021-V.webp",
+        "precio": "36000"
+    },
+    {
+        "id": 8,
+        "nombre": "Dos Teléfonos Ipro Benny + Microsd 16gb Ideal Chicos",
+        "title": "celular",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_801251-MLA48008438951_102021-V.webp",
+        "precio": "30000"
     }
 ]

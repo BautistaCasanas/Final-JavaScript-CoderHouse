@@ -35,8 +35,8 @@ $("#buscador-producto").on("keydown", (e) => {
         e.target.value = respuesta[posicionSugerido];
     }
 });
-})
-}
+});
+};
 const validarFormulario = (form) => {
     form.preventDefault();
     console.log(`Producto: ${form.target.children[0].value}`);   
@@ -44,7 +44,46 @@ const validarFormulario = (form) => {
 
     $("#formulario-buscador").on("submit", validarFormulario);
 
-
 ingresarSugeridos();
+
+const input = document.querySelector("#buscador-producto");
+const botonInput = document.querySelector("#botonInput");
+const resultado = document.querySelector("#listado");
+
+const filtrar =()=>{
+    resultado.innerHTML="";
+
+    const texto = input.value.toLowerCase();
+    $.get(urlProductos, (respuesta, estado)=>{
+        if(estado === "success"){
+            for(buscador of respuesta){
+                let nombre = buscador.title.toLowerCase();
+                if(nombre.indexOf(texto)!== -1){
+                    resultado.innerHTML += `
+                    <div id="productosBuscados">
+                    <img id="imgBuscado" src="${buscador.imagen}"/>
+                <div class="descripcion-producto">
+                <p> ${buscador.nombre} </p>
+                <br>
+                <b>$${buscador.precio} </b>
+                <input type="button" name="Agregar" value="Agregar" class="botonAgregar" onclick="insertarProductosACanasta(${buscador.id})">
+                </div>
+                </div>
+            
+                    `
+                }
+            }
+            if(resultado.innerHTML ===""){
+                resultado.innerHTML += `
+                    <h3 id="notFound">Producto no Encontrado..</h3>`
+            }
+        }
+    });
+    
+}
+botonInput.addEventListener("click", filtrar);
+
 });
+
+
 
